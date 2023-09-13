@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Look Closer | The Show</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -19,6 +19,30 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
+
+    <link rel="ttnorms-font" href="fonts/TTNorms-Regular.otf" />
+    <link rel="opticiansans-font" href="fonts/Optician-Sans.otf" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function SubForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+          type: "post",
+          data: $("#myForm").serializeArray(),
+          success: function () {
+            alert("Form Data Submitted :)");
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -26,9 +50,9 @@
     <!--header-->
     <header>
       <div class="content-wrapper">
-        <figure class="look-closer-logo-green">
+        <figure class="look-closer-logo">
           <a href="#"
-            ><img src="img/look-closer-logo-green.jpeg" alt="Look Closer Logo"
+            ><img src="img/LookCloser_Logo.png" alt="Look Closer Logo"
           /></a>
         </figure>
         <div class="header-divider"></div>
@@ -91,28 +115,26 @@
         </div>
       </section>
 
-      <section>
+      <section class="residency">
         <div class="content-wrapper">
-          <div class="residency">
-            <div class="residency-image">
-              <a href="#"
-                ><img
-                  src="img/Look_Closer-Carnegie_Hall-2.jpg"
-                  alt="Man looking through magnifying glass"
-              /></a>
-            </div>
-            <div class="residency-description">
-              <h4>
-                Joshua Jay and his stunning new show will have February
-                residency at the super cool Midnight Theater in NYC. Tickets on
-                sale soon here and at midnighttheatre.com
-              </h4>
-            </div>
+          <div class="residency-image">
+            <a href="#"
+              ><img
+                src="img/Look_Closer-Carnegie_Hall-2.jpg"
+                alt="Man looking through magnifying glass"
+            /></a>
+          </div>
+          <div class="residency-description">
+            <h4>
+              Joshua Jay and his stunning new show will have February residency
+              at the super cool Midnight Theater in NYC. Tickets on sale soon
+              here and at midnighttheatre.com
+            </h4>
           </div>
         </div>
       </section>
-
-      <aside>
+      <!--Signup Form-->
+      <!-- <aside>
         <div class="content-wrapper">
           <div class="form-description">
             <h4>
@@ -124,7 +146,40 @@
             <button class="signup-button">Sign me up!</button>
           </div>
         </div>
-      </aside>
+      </aside> -->
+
+      <section class="container">
+        <section class="one">
+          <div class="logo">
+            <img src="img/vanishing-inc-logo.jpeg" />
+          </div>
+          <h2 class="heading">
+            Sign up for Joshua Jay's newsletter and
+            <span>don't miss a trick.</span>
+          </h2>
+
+          <form id="myForm">
+            <input type="text" name="name" placeholder="enter your name" />
+            <br />
+            <br />
+
+            <input type="text" name="email" placeholder="enter your email" />
+            <br />
+
+            <br />
+          </form>
+          <button class="btn" role="button" onclick="SubForm()">
+            Sign me up!
+          </button>
+        </section>
+
+        <section class="two">
+          <h3>thank you for subscribing !</h3>
+          <div class="close"></div>
+        </section>
+      </section>
+
+      <!--End of Signup Form-->
     </main>
 
     <footer>
@@ -185,3 +240,5 @@
     <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
+
+<!--https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/-->
