@@ -11,6 +11,13 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
@@ -52,7 +59,9 @@
       <div class="content-wrapper">
         <figure class="look-closer-logo">
           <a href="#"
-            ><img src="img/LookCloser_Logo.png" alt="Look Closer Logo"
+            ><img
+              src="img/look-closer-logo-green-cropped.jpg"
+              alt="Look Closer Logo"
           /></a>
         </figure>
         <div class="header-divider"></div>
@@ -70,17 +79,18 @@
     </header>
 
     <main>
-      <section class="hero-area">
-        <div class="content-wrapper">
-          <h1>January 31st, 2024</h1>
-          <h1>Opening night at Carnegie Hall</h1>
-          <button class="action-button">
-            Buy my Carnegie Hall tickets now
-          </button>
-        </div>
-      </section>
+      <div class="hero-area-container">
+        <section class="hero-area">
+          <div class="content-wrapper">
+            <h1>January 31st, 2024</h1>
+            <h1>Opening night at Carnegie Hall</h1>
+            <button class="action-button">Buy my tickets now</button>
+            <button class="action-button">Buy my VIP tickets now</button>
+          </div>
+        </section>
+      </div>
 
-      <aside>
+      <aside class="blurb">
         <div class="content-wrapper">
           <div class="dc-blurb">
             <h3>
@@ -89,13 +99,62 @@
             </h3>
             <h4>- David Copperfield</h4>
           </div>
-          <button class="action-button">
-            Buy my Carnegie Hall tickets now
-          </button>
+          <button class="action-button">Buy my tickets now</button>
+          <button class="action-button">Buy my VIP tickets now</button>
         </div>
       </aside>
 
-      <section>
+      <!--Carousel-->
+      <div id="container">
+        <div id="inner_container">
+          <div id="imgs_container">
+            <div class="img_container">
+              <img src="img/Joshua Jay-6.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-8.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-10 2.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-12.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-16.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-22.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-27.jpg" />
+            </div>
+            <div class="img_container">
+              <img src="img/Joshua Jay-28.jpg" />
+            </div>
+          </div>
+          <div id="overlay">
+            <div
+              id="left_button"
+              class="overlay_button"
+              onclick="onLeftButton()"
+            >
+              <
+            </div>
+            <div
+              id="right_button"
+              class="overlay_button"
+              onclick="onRightButton()"
+            >
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End of Carousel-->
+
+      <section class="description">
         <div class="content-wrapper">
           <div class="show-description">
             <p>
@@ -125,37 +184,28 @@
             /></a>
           </div>
           <div class="residency-description">
-            <h4>
+            <p>
               Joshua Jay and his stunning new show will have February residency
-              at the super cool Midnight Theater in NYC. Tickets on sale soon
-              here and at midnighttheatre.com
-            </h4>
+              at the elegant Midnight Theater in NYC. Tickets on sale soon here
+              and at <span class="midnight-link">midnighttheatre.com</span>
+            </p>
+          </div>
+          <div class="midnight-theater-logo">
+            <a href="#"
+              ><img
+                src="img/Midnight Theater Logo.png"
+                alt="Midnight Theater Logo"
+            /></a>
           </div>
         </div>
       </section>
-      <!--Signup Form-->
-      <!-- <aside>
-        <div class="content-wrapper">
-          <div class="form-description">
-            <h4>
-              Sign up for Joshua Jay's newsletter and
-              <span>don't miss a trick.</span>
-            </h4>
-          </div>
-          <div class="form">
-            <button class="signup-button">Sign me up!</button>
-          </div>
-        </div>
-      </aside> -->
 
-      <section class="container">
+      <!--Signup Form-->
+      <section class="signup-container">
         <section class="one">
-          <div class="logo">
-            <img src="img/vanishing-inc-logo.jpeg" />
-          </div>
           <h2 class="heading">
             Sign up for Joshua Jay's newsletter and
-            <span>don't miss a trick.</span>
+            <span class="trick">don't miss a trick.</span>
           </h2>
 
           <form id="myForm">
@@ -172,11 +222,6 @@
             Sign me up!
           </button>
         </section>
-
-        <section class="two">
-          <h3>thank you for subscribing !</h3>
-          <div class="close"></div>
-        </section>
       </section>
 
       <!--End of Signup Form-->
@@ -185,6 +230,22 @@
     <footer>
       <div class="contact-us">
         <h4>Contact Us</h4>
+        <div class="vanish-contact">
+          <div class="vanish-logo">
+            <a href="#"
+              ><img src="img/vanishing-inc-logo.jpeg" alt="Vanishing Inc logo"
+            /></a>
+          </div>
+          <div class="email-icon"></div>
+          <div class="vanish-email">
+            <h5>magic@vanishingincmagic.com</h5>
+          </div>
+          <div class="location-icon"></div>
+          <div class="vanish-location">
+            <h5>11355 Folsom Blvd Unit K</h5>
+            <h5>Rancho Cordova, CA 95742, United States</h5>
+          </div>
+        </div>
         <div class="groupava-contact">
           <div class="groupava-logo">
             <a href="#"
@@ -202,28 +263,17 @@
             <h5>Everywhere</h5>
           </div>
         </div>
-        <div class="vanish-contact">
-          <div class="vanish-logo">
-            <a href="#"
-              ><img src="img/vanishing-inc-logo.jpeg" alt="Vanishing Inc logo"
-            /></a>
-          </div>
-          <div class="email-icon"></div>
-          <div class="vanish-email">
-            <h5>magic@vanishingincmagic.com</h5>
-          </div>
-          <div class="location-icon"></div>
-          <div class="vanish-location">
-            <h5>11355 Folsom Blvd Unit K</h5>
-            <h5>Rancho Cordova, CA 95742, United States</h5>
-          </div>
-        </div>
       </div>
     </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
