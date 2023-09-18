@@ -29,6 +29,17 @@
 
     <link rel="ttnorms-font" href="fonts/TTNorms-Regular.otf" />
     <link rel="opticiansans-font" href="fonts/Optician-Sans.otf" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a4e8fca4aa.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
@@ -41,12 +52,12 @@
           url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
           type: "post",
           data: $("#myForm").serializeArray(),
-          success: function () {
-            alert("Form Data Submitted :)");
-          },
-          error: function () {
-            alert("There was an error :(");
-          },
+          // success: function () {
+          //   alert("Form Data Submitted :)");
+          // },
+          // error: function () {
+          //   alert("There was an error :(");
+          // },
         });
       }
     </script>
@@ -68,10 +79,10 @@
         <!--Nav Bar-->
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#buy-tickets">Buy Tickets</a></li>
-            <li><a href="#sign-up">Sign Up</a></li>
+            <li><a href="#signup">Sign Up</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
@@ -87,8 +98,8 @@
               <h1>Opening night at Carnegie Hall</h1>
             </div>
             <div class="call-to-action">
-              <button class="action-button">Buy my tickets now</button>
               <button class="action-VIP-button">Buy my VIP tickets now</button>
+              <button class="action-button">Buy my tickets now</button>
             </div>
             <div>
               <p>
@@ -107,10 +118,10 @@
             <h4>love of the art"</h4>
             <h4>- David Copperfield</h4>
           </div>
-          <div class="call-to-action">
+          <!-- <div class="call-to-action">
             <button class="action-button">Buy my tickets now</button>
             <button class="action-VIP-button">Buy my VIP tickets now</button>
-          </div>
+          </div> -->
         </div>
       </aside>
 
@@ -165,11 +176,11 @@
       <!--End of Carousel-->
 
       <div class="call-to-action">
-        <button class="action-button">Buy my tickets now</button>
         <button class="action-VIP-button">Buy my VIP tickets now</button>
+        <button class="action-button">Buy my tickets now</button>
       </div>
 
-      <section class="description">
+      <section id="about" class="description">
         <div class="content-wrapper">
           <div class="show-description">
             <h4>From Joshua Jay -</h4>
@@ -226,7 +237,7 @@
       <!--End of Midnight Theater Residency Announcement Section-->
 
       <!--Ticket Information Section-->
-      <section class="ticket-info-section">
+      <section id="buy-tickets" class="ticket-info-section">
         <div class="content-wrapper">
           <div class="general-ticket-info">
             <h2>Ticket Information and Pricing</h2>
@@ -258,14 +269,14 @@
       </section>
 
       <div class="call-to-action">
-        <button class="action-button">Buy my tickets now</button>
         <button class="action-VIP-button">Buy my VIP tickets now</button>
+        <button class="action-button">Buy my tickets now</button>
       </div>
 
       <!--Ticket Information Section-->
 
       <!--Signup Form-->
-      <section class="signup-container">
+      <section id="signup" class="signup-container">
         <section class="one">
           <h2 class="heading">
             Sign up for Joshua Jay's email list for show updates and ticket
@@ -294,40 +305,60 @@
     </main>
 
     <footer>
-      <div class="contact-us">
-        <h4>Contact Us</h4>
+      <div id="contact-us" class="contact-us">
+        <h1>Contact Us</h1>
         <div class="vanish-contact">
           <div class="vanish-logo">
-            <a href="#"
+            <a href="https://www.vanishingincmagic.com/"
               ><img src="img/vanishing-inc-logo.jpeg" alt="Vanishing Inc logo"
             /></a>
           </div>
-          <div class="email-icon"></div>
+          <div class="icons-container">
+          <div class="contact-us-icons">
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fas fa-thin fa-envelope"></i></p>
+            <p><i class="fas fa-thin fa-location-dot"></i></p>
+          </div>
+          </div>
+
+          <!-- <div class="email-icon"></div>
           <div class="vanish-email">
-            <h5>magic@vanishingincmagic.com</h5>
+            <p>magic@vanishingincmagic.com</p>
           </div>
           <div class="location-icon"></div>
           <div class="vanish-location">
-            <h5>11355 Folsom Blvd Unit K</h5>
-            <h5>Rancho Cordova, CA 95742, United States</h5>
-          </div>
+            <p>11355 Folsom Blvd Unit K</p>
+            <p>Rancho Cordova, CA 95742, United States</p>
+          </div> -->
         </div>
         <div class="groupava-contact">
           <div class="groupava-logo">
-            <a href="#"
+            <a href="https://www.groupava.com/"
               ><img src="img/groupava-logo.png" alt="Group Ava logo"
             /></a>
           </div>
-          <div class="email-icon"></div>
+          <div class="icons-container">
+          <div class="contact-us-icons">
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fas fa-thin fa-envelope"></i></p>
+            <p><i class="fas fa-light fa-location-dot"></i></p>
+          </div>
+          </div>
+          <!-- <div class="email-icon"></div>
           <div class="groupava-email">
-            <h5>katie@groupava.com</h5>
-            <h5>leslie@groupava.com</h5>
-            <h5>anne-marie@groupava.com</h5>
+            <p>katie@groupava.com</p>
+            <p>leslie@groupava.com</p>
+            <p>annemarie@groupava.com</p>
           </div>
           <div class="location-icon"></div>
           <div class="groupava-location">
-            <h5>Everywhere</h5>
+            <p>Everywhere</p>
           </div>
+        </div> -->
+        <div class="footer-links">
+          <p><a href="https://www.vanishingincmagic.com/faqs/privacy/">Privacy Policy</a></p>
+          <p><a href="https://www.vanishingincmagic.com/">Merchandise</a></p>
+          <p><a href="https://www.sharemagic.org/sharemagic/">Help us help young magicians</a></p>          
         </div>
       </div>
     </footer>
