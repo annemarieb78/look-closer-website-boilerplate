@@ -75,7 +75,7 @@
               alt="Look Closer Logo"
           /></a>
         </figure>
-        <div class="header-divider"></div>
+        
         <!--Nav Bar-->
         <nav>
           <ul>
@@ -97,14 +97,14 @@
               <h1>January 31st, 2024</h1>
               <h1>Opening night at Carnegie Hall</h1>
             </div>
-            <div class="call-to-action">
-              <button class="action-VIP-button">Buy my VIP tickets now</button>
-              <button class="action-button">Buy my tickets now</button>
-            </div>
-            <div>
-              <p>
-                All Carnegie Hall Opening Night tickets go on sale November 2
-              </p>
+            <div class="action-date">
+            <div class="call-to-action">             
+              <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
+              <button class="action-button" role="button">Buy my tickets now</button>             
+            </div> 
+               <p>
+                Carnegie Hall Opening Night tickets go on sale November 2
+              </p>             
             </div>
           </div>
         </section>
@@ -116,11 +116,11 @@
             <h4>"Joshua Jay is a superb, innovative</h4>
             <h4>conjurer with an unrelenting</h4>
             <h4>love of the art"</h4>
-            <h4>- David Copperfield</h4>
+            <h5>- David Copperfield</h5>
           </div>
           <!-- <div class="call-to-action">
-            <button class="action-button">Buy my tickets now</button>
-            <button class="action-VIP-button">Buy my VIP tickets now</button>
+            <button class="action-button" role="button">Buy my tickets now</button>
+            <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
           </div> -->
         </div>
       </aside>
@@ -176,8 +176,8 @@
       <!--End of Carousel-->
 
       <div class="call-to-action">
-        <button class="action-VIP-button">Buy my VIP tickets now</button>
-        <button class="action-button">Buy my tickets now</button>
+        <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
+        <button class="action-button" role="button">Buy my tickets now</button>
       </div>
 
       <section id="about" class="description">
@@ -203,7 +203,10 @@
 
       <!--Midnight Theater Residency Announcement Section-->
       <section class="residency">
+        
         <div class="content-wrapper">
+          <div class="divider"></div>
+          <div class="img-txt-logo-container">
           <div class="residency-image">
             <a href="#"
               ><img
@@ -214,14 +217,13 @@
           <div class="description-logo">
             <div class="residency-description">
               <p>
-                Joshua Jay and his stunning new show will have a February
-                residency at the elegant Midnight Theatre in NYC. Tickets on
+                Joshua Jay and his stunning new show will have a <b>February
+                residency</b> at the elegant Midnight Theatre in NYC. Tickets on
                 sale soon here and at
                 <span class="midnight-link"
                   ><a href="https://midnighttheatre.com" target="_blank"
                     >midnighttheatre.com</a
-                  ></span
-                >
+                  ></span>
               </p>
             </div>
             <div class="midnight-logo">
@@ -232,7 +234,10 @@
               /></a>
             </div>
           </div>
+          </div>
+          <div class="divider"></div>
         </div>
+         
       </section>
       <!--End of Midnight Theater Residency Announcement Section-->
 
@@ -256,21 +261,21 @@
             </p>
             <ul>
               <li>Front-row or second-row seating.</li>
-              <li>
-                A one hour cocktail reception at Carnegie Hall after the main
-                show.
-              </li>
               <li>A unique post-show, close-up magic set by Joshua Jay.</li>
+              <li>
+                Cocktail hour at Carnegie Hall after the main
+                show with open bar and light snacks.
+              </li>              
               <li>A signed copy of his book,<em>How Magicians Think.</em></li>
-              <li>Reception includes open bar and light snacks.</li>
+              <!-- <li>Reception includes open bar and light snacks.</li> -->
             </ul>
           </div>
         </div>
       </section>
 
       <div class="call-to-action">
-        <button class="action-VIP-button">Buy my VIP tickets now</button>
-        <button class="action-button">Buy my tickets now</button>
+        <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
+        <button class="action-button" role="button">Buy my tickets now</button>
       </div>
 
       <!--Ticket Information Section-->
@@ -307,6 +312,7 @@
     <footer>
       <div id="contact-us" class="contact-us">
         <h1>Contact Us</h1>
+        <div class="contact-container">
         <div class="vanish-contact">
           <div class="vanish-logo">
             <a href="https://www.vanishingincmagic.com/"
@@ -344,6 +350,8 @@
             <p><i class="fas fa-light fa-location-dot"></i></p>
           </div>
           </div>
+          </div>
+        </div>
           <!-- <div class="email-icon"></div>
           <div class="groupava-email">
             <p>katie@groupava.com</p>
@@ -355,12 +363,15 @@
             <p>Everywhere</p>
           </div>
         </div> -->
+        <div class="links-container">
         <div class="footer-links">
           <p><a href="https://www.vanishingincmagic.com/faqs/privacy/">Privacy Policy</a></p>
           <p><a href="https://www.vanishingincmagic.com/">Merchandise</a></p>
           <p><a href="https://www.sharemagic.org/sharemagic/">Help us help young magicians</a></p>          
         </div>
-      </div>
+        </div>
+      
+
     </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
