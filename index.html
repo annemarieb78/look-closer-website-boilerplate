@@ -61,6 +61,21 @@
         });
       }
     </script>
+    <script>
+      function SubForm() {
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+          type: "post",
+          data: $("#myForm-uptop").serializeArray(),
+          // success: function () {
+          //   alert("Form Data Submitted :)");
+          // },
+          // error: function () {
+          //   alert("There was an error :(");
+          // },
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -75,7 +90,7 @@
               alt="Look Closer Logo"
           /></a>
         </figure>
-        
+
         <!--Nav Bar-->
         <nav>
           <ul>
@@ -86,8 +101,33 @@
             <li><a href="#contact-us">Contact Us</a></li>
           </ul>
         </nav>
+
+        <!--Uptop Signup-->
       </div>
     </header>
+    <h2 class="heading-uptop">
+      Be the first to know when tickets go on sale
+    </h2>
+    <section id="signup-uptop" class="signup-container-uptop">
+      <section class="one-uptop">
+       
+
+        <form id="myForm-uptop">
+          <input type="text" name="name" placeholder="enter your name" />
+
+          <br />
+
+          <input type="text" name="email" placeholder="enter your email" />
+
+          <br />
+        </form>
+        <div class="signup-button-uptop">
+          <button class="btn-uptop" role="button" onclick="SubForm()">
+            Sign me up!
+          </button>
+        </div>
+      </section>
+    </section>
 
     <main>
       <div class="hero-area-container">
@@ -98,13 +138,15 @@
               <h1>Opening night at Carnegie Hall</h1>
             </div>
             <div class="action-date">
-            <div class="call-to-action">             
-              <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
-              <button class="action-button" role="button">Buy my tickets now</button>             
-            </div> 
-               <p>
-                Carnegie Hall Opening Night tickets go on sale November 2
-              </p>             
+              <div class="call-to-action">
+                <button class="action-VIP-button" role="button">
+                  Buy my VIP tickets now
+                </button>
+                <button class="action-button" role="button">
+                  Buy my tickets now
+                </button>
+              </div>
+              <p>Carnegie Hall Opening Night tickets go on sale November 2</p>
             </div>
           </div>
         </section>
@@ -176,7 +218,9 @@
       <!--End of Carousel-->
 
       <div class="call-to-action">
-        <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
+        <button class="action-VIP-button" role="button">
+          Buy my VIP tickets now
+        </button>
         <button class="action-button" role="button">Buy my tickets now</button>
       </div>
 
@@ -203,41 +247,40 @@
 
       <!--Midnight Theater Residency Announcement Section-->
       <section class="residency">
-        
         <div class="content-wrapper">
           <div class="divider"></div>
           <div class="img-txt-logo-container">
-          <div class="residency-image">
-            <a href="#"
-              ><img
-                src="img/look-closer-2-cropped.jpg"
-                alt="Man looking through magnifying glass"
-            /></a>
-          </div>
-          <div class="description-logo">
-            <div class="residency-description">
-              <p>
-                Joshua Jay and his stunning new show will have a <b>February
-                residency</b> at the elegant Midnight Theatre in NYC. Tickets on
-                sale soon here and at
-                <span class="midnight-link"
-                  ><a href="https://midnighttheatre.com" target="_blank"
-                    >midnighttheatre.com</a
-                  ></span>
-              </p>
-            </div>
-            <div class="midnight-logo">
-              <a href="https://midnighttheatre.com" target="_blank"
+            <div class="residency-image">
+              <a href="#"
                 ><img
-                  src="img/Midnight Theatre Logo.png"
-                  alt="Midnight Theatre Logo"
+                  src="img/look-closer-2-cropped.jpg"
+                  alt="Man looking through magnifying glass"
               /></a>
             </div>
-          </div>
+            <div class="description-logo">
+              <div class="residency-description">
+                <p>
+                  Joshua Jay and his stunning new show will have a
+                  <b>February residency</b> at the elegant Midnight Theatre in
+                  NYC. Tickets on sale soon here and at
+                  <span class="midnight-link"
+                    ><a href="https://midnighttheatre.com" target="_blank"
+                      >midnighttheatre.com</a
+                    ></span
+                  >
+                </p>
+              </div>
+              <div class="midnight-logo">
+                <a href="https://midnighttheatre.com" target="_blank"
+                  ><img
+                    src="img/Midnight Theatre Logo.png"
+                    alt="Midnight Theatre Logo"
+                /></a>
+              </div>
+            </div>
           </div>
           <div class="divider"></div>
         </div>
-         
       </section>
       <!--End of Midnight Theater Residency Announcement Section-->
 
@@ -250,9 +293,9 @@
               All tickets for Opening Night go on sale November 2nd. Show will
               be held in the beautiful and intimate Weill Recital Hall.
             </p>
-            <p>Orchestra front: $150</p>
-            <p>Orchestra back: $125</p>
-            <p>Balcony: $75</p>
+            <p>Orchestra front: $199</p>
+            <p>Orchestra back: $150</p>
+            <p>Balcony: $99</p>
           </div>
           <div class="VIP-ticket-info">
             <p>
@@ -263,10 +306,12 @@
               <li>Front-row or second-row seating.</li>
               <li>A unique post-show, close-up magic set by Joshua Jay.</li>
               <li>
-                Cocktail hour at Carnegie Hall after the main
-                show with open bar and light snacks.
-              </li>              
-              <li>A signed copy of his book,<em>How Magicians Think.</em></li>
+                Cocktail hour at Carnegie Hall after the main show with open bar
+                and light snacks.
+              </li>
+              <li>
+                A signed copy of Joshua Jay's book,<em>How Magicians Think.</em>
+              </li>
               <!-- <li>Reception includes open bar and light snacks.</li> -->
             </ul>
           </div>
@@ -274,7 +319,9 @@
       </section>
 
       <div class="call-to-action">
-        <button class="action-VIP-button" role="button">Buy my VIP tickets now</button>
+        <button class="action-VIP-button" role="button">
+          Buy my VIP tickets now
+        </button>
         <button class="action-button" role="button">Buy my tickets now</button>
       </div>
 
@@ -311,67 +358,62 @@
 
     <footer>
       <div id="contact-us" class="contact-us">
-        <h1>Contact Us</h1>
+        <h1>Contact the Producers</h1>
         <div class="contact-container">
-        <div class="vanish-contact">
-          <div class="vanish-logo">
-            <a href="https://www.vanishingincmagic.com/"
-              ><img src="img/vanishing-inc-logo.jpeg" alt="Vanishing Inc logo"
-            /></a>
+          <div class="groupava-contact">
+            <div class="groupava-logo">
+              <a href="https://www.groupava.com/" target="_blank"
+                ><img src="img/groupava-logo-smaller.png" alt="Group Ava logo"
+              /></a>
+            </div>
+            <div class="icons-container">
+              <div class="contact-us-icons">
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fas fa-thin fa-envelope"></i></p>
+                <p><i class="fas fa-light fa-location-dot"></i></p>
+              </div>
+            </div>
           </div>
-          <div class="icons-container">
-          <div class="contact-us-icons">
-            <p><i class="fab fa-instagram"></i></p>
-            <p><i class="fas fa-thin fa-envelope"></i></p>
-            <p><i class="fas fa-thin fa-location-dot"></i></p>
+          <div class="vanish-contact">
+            <div class="vanish-logo">
+              <a href="https://www.vanishingincmagic.com/" target="_blank"
+                ><img
+                  src="img/vanishing-inc-logo.jpeg"
+                  alt="Vanishing Inc logo"
+              /></a>
+            </div>
+            <div class="icons-container">
+              <div class="contact-us-icons">
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fas fa-thin fa-envelope"></i></p>
+                <p><i class="fas fa-thin fa-location-dot"></i></p>
+              </div>
+            </div>
           </div>
-          </div>
+        </div>
 
-          <!-- <div class="email-icon"></div>
-          <div class="vanish-email">
-            <p>magic@vanishingincmagic.com</p>
-          </div>
-          <div class="location-icon"></div>
-          <div class="vanish-location">
-            <p>11355 Folsom Blvd Unit K</p>
-            <p>Rancho Cordova, CA 95742, United States</p>
-          </div> -->
-        </div>
-        <div class="groupava-contact">
-          <div class="groupava-logo">
-            <a href="https://www.groupava.com/"
-              ><img src="img/groupava-logo-smaller.png" alt="Group Ava logo"
-            /></a>
-          </div>
-          <div class="icons-container">
-          <div class="contact-us-icons">
-            <p><i class="fab fa-instagram"></i></p>
-            <p><i class="fas fa-thin fa-envelope"></i></p>
-            <p><i class="fas fa-light fa-location-dot"></i></p>
-          </div>
-          </div>
-          </div>
-        </div>
-          <!-- <div class="email-icon"></div>
-          <div class="groupava-email">
-            <p>katie@groupava.com</p>
-            <p>leslie@groupava.com</p>
-            <p>annemarie@groupava.com</p>
-          </div>
-          <div class="location-icon"></div>
-          <div class="groupava-location">
-            <p>Everywhere</p>
-          </div>
-        </div> -->
         <div class="links-container">
-        <div class="footer-links">
-          <p><a href="https://www.vanishingincmagic.com/faqs/privacy/">Privacy Policy</a></p>
-          <p><a href="https://www.vanishingincmagic.com/">Merchandise</a></p>
-          <p><a href="https://www.sharemagic.org/sharemagic/">Help us help young magicians</a></p>          
+          <div class="footer-links">
+            <p>
+              <a
+                href="https://www.vanishingincmagic.com/faqs/privacy/"
+                target="_blank"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a href="https://www.vanishingincmagic.com/" target="_blank"
+                >Merchandise</a
+              >
+            </p>
+            <p>
+              <a href="https://www.sharemagic.org/sharemagic/" target="_blank"
+                >Help us help young magicians</a
+              >
+            </p>
+          </div>
         </div>
-        </div>
-      
-
+      </div>
     </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>

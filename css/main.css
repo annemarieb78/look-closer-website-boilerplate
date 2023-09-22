@@ -165,6 +165,71 @@ nav ul li a {
   font-weight: bold;
 }
 
+/*Uptop Signup Form*/
+
+.signup-container-uptop {
+  background-color: #0c2116;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.one-uptop {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1% 0 5% 0;
+  width: 100%;
+}
+
+.heading-uptop {
+  display: flex; 
+  font-size: 1em;
+  text-align: center;
+}
+
+.signup-button-uptop {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  height: 40px;
+}
+
+.btn-uptop {
+  background-color: #1ddfb8;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#myForm-uptop {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 70%;
+}
+#myForm-uptop input {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  text-align: center;
+  font-size: .75em;
+  width: 45%;
+  height: 40px;
+}
+/*End of Signup Form*/
+
+/*Hero Area*/
+
 .hero-area-container {
   display: flex;
   justify-content: center;
@@ -391,6 +456,7 @@ nav ul li a {
 .description-logo {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
   padding-right: 2%;
 }
@@ -405,12 +471,13 @@ nav ul li a {
 .residency-description {
   padding-top: 5%;
   width: 60%;
+  align-items: center;
 }
 
 .midnight-logo {
   width: 30%;
   height: 30%;
-  padding-top: 5%;
+  align-items: center;
 }
 
 .midnight-logo a img {
@@ -658,6 +725,7 @@ footer h1 {
     height: 30px;
     font-size: 1.25em;
     margin-bottom: 1%;
+    align-items: center;
   }
 
   .action-VIP-button {
@@ -665,6 +733,7 @@ footer h1 {
     height: 30px;
     font-size: 1.25em;
     margin-bottom: 1%;
+    align-items: center;
   }
 
   .hero-area .content-wrapper p {
@@ -672,6 +741,10 @@ footer h1 {
   }
 
   /* DC Blurb*/
+  .dc-blurb {
+    padding-top: 8%;
+  }
+
   .dc-blurb h4 {
     font-size: 2.5em;
   }
@@ -682,21 +755,21 @@ footer h1 {
 
   /*Show Description*/
   .description .content-wrapper {
-    min-height: 300px;
     width: 80%;
     align-items: center;
   }
 
   .show-description {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
     width: 90%;
   }
 
   .show-description h4 {
     padding-top: 8%;
+    font-size: 1.75em;
+  }
+
+  .show-description p {
+    font-size: 1.25em;
   }
 
   /*Residency Announcement Tablet*/
@@ -732,9 +805,11 @@ footer h1 {
   }
 
   .midnight-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40%;
     height: 40%;
-    padding-top: 5%;
   }
 
   /*Ticket Info Section*/
@@ -795,6 +870,159 @@ footer h1 {
     display: flex;
     justify-content: space-around;
     padding: 3%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
+  /*Header*/
+  header {
+    width: 80%;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: nowrap;
+    width: 100%;
+    min-height: 150px;
+  }
+
+  header img {
+    padding: 0;
+  }
+
+  .look-closer-logo {
+    width: 50%;
+    height: 90%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  /*Hero Section*/
+  .hero-area {
+    min-height: 1300px;
+  }
+
+  .hero-area h1 {
+    font-size: 3.5em;
+  }
+
+  .action-button,
+  .action-VIP-button {
+    height: 50px;
+    font-size: 1.75em;
+  }
+
+  /* .hero-area .call-to-action {
+    display: none;
+  } */
+
+  .hero-area .content-wrapper p {
+    font-size: 2em;
+  }
+
+  /*DC Blurb*/
+  .dc-blurb h4 {
+    font-size: 3.5em;
+  }
+
+  .dc-blurb h5 {
+    font-size: 2.5em;
+  }
+
+  /*Carousel*/
+  #container {
+    width: 60%;
+    padding-top: 30%;
+    margin-left: 20%;
+  }
+
+  /*Show Description*/
+
+  .show-description p {
+    font-size: 2em;
+  }
+
+  .show-description h4 {
+    font-size: 3em;
+  }
+
+  /*Residency Announcement Tablet*/
+  .residency-image {
+    width: 100%;
+  }
+
+  .residency img {
+    padding: 0 0 5% 5%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .residency-description {
+    font-size: 2em;
+    padding-top: 0;
+  }
+
+  .midnight-logo {
+    padding-top: 0;
+    height: 80%;
+  }
+
+  /*Ticket Info Section*/
+  .ticket-info-section h2 {
+    font-size: 3em;
+  }
+
+  .ticket-info-section p,
+  .VIP-ticket-info p,
+  .VIP-ticket-info ul {
+    font-size: 2em;
+  }
+
+  .ticket-info-section {
+    padding-top: 6%;
+  }
+
+  /*Signup Form*/
+
+  #myForm input {
+    height: 50px;
+    width: 30%;
+  }
+
+  .heading {
+    font-size: 2.5em;
+  }
+
+  .trick {
+    font-size: 4em;
+  }
+
+  .btn {
+    height: 50px;
+    width: 15%;
+  }
+
+  /*Footer*/
+  .contact-us {
+    width: 70%;
+  }
+
+  footer h1 {
+    font-size: 4em;
+  }
+
+  .vanish-contact,
+  .groupava-contact {
+    width: 30%;
+  }
+
+  .footer-links {
+    padding: 8%;
+    font-size: 1.25em;
   }
 }
 
