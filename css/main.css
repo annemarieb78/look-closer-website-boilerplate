@@ -183,7 +183,7 @@ nav ul li a {
 }
 
 .heading-uptop {
-  display: flex; 
+  display: flex;
   font-size: 1em;
   text-align: center;
 }
@@ -193,7 +193,7 @@ nav ul li a {
   align-items: center;
   text-align: center;
   width: 25%;
-  height: 40px;
+  height: 30px;
 }
 
 .btn-uptop {
@@ -202,7 +202,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: .75em;
+  font-size: 0.75em;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -222,14 +222,13 @@ nav ul li a {
   justify-content: space-evenly;
   border-radius: 10px;
   text-align: center;
-  font-size: .75em;
+  font-size: 0.75em;
   width: 45%;
-  height: 40px;
+  height: 30px;
 }
-/*End of Signup Form*/
+/*End of Uptop Signup*/
 
 /*Hero Area*/
-
 .hero-area-container {
   display: flex;
   justify-content: center;
@@ -238,18 +237,11 @@ nav ul li a {
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url(../img/look-closer-1-edited-for-site.png) center, no-repeat;
+  background: url(../img/six-fingers-1600x1000.jpg) center, no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 200px;
   width: 100%;
   align-items: flex-end;
-}
-
-.hero-area h1 {
-  color: #fff;
-  font-size: 1.25em;
-  line-height: 1em;
-  font-weight: 500;
 }
 
 .hero-area .content-wrapper {
@@ -269,7 +261,10 @@ nav ul li a {
   justify-content: center;
   align-items: flex-start;
   margin: 0;
-  padding: 1% 0.5% 0.5% 0.5%;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1em;
+  font-weight: 500;
 }
 
 .hero-area .call-to-action {
@@ -308,6 +303,20 @@ nav ul li a {
   display: flex;
   justify-content: center;
   padding-top: 1%;
+}
+
+/*Intro Paragraph*/
+.intro-para {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  width: 100%;
+}
+.intro-para h3 {
+  font-family: "Open Sans";
+  text-align: center;
+  width: 95%;
+  font-size: 1em;
 }
 
 /*DC Quote*/
@@ -404,11 +413,9 @@ nav ul li a {
 #right_button {
   right: 1%;
 }
-
 /*End of Carousel*/
 
 /*Show Description*/
-
 .description {
   display: flex;
   justify-content: center;
@@ -489,12 +496,17 @@ nav ul li a {
   text-decoration: none;
   color: #1ddfb8;
 }
-
 /*End of Residency Announcement*/
 
 /*Ticket Info Section*/
 .ticket-info-section {
+  display: flex;
+  justify-content: center;
   padding-top: 8%;
+}
+
+.ticket-info-section .content-wrapper {
+  width: 95%;
 }
 
 /*Signup Form*/
@@ -567,8 +579,9 @@ footer {
 }
 
 footer h1 {
-  font-size: 3em;
-  padding-top: 5%;
+  font-size: 2.25em;
+  padding: 5% 5% 0 5%;
+  margin-bottom: 0;
 }
 
 .icons-container {
@@ -711,13 +724,37 @@ footer h1 {
     font-size: 1.25em;
   }
 
-  .hero-area {
-    min-height: 700px;
+  /*Uptop Signup*/
+  .signup-container-uptop {
+    width: 70%;
   }
 
-  .hero-area h1 {
-    font-size: 2em;
-    line-height: 1em;
+  .heading-uptop {
+    font-size: 1.5em;
+  }
+
+  .signup-button-uptop {
+    height: 40px;
+    width: 20%;
+  }
+
+  .btn-uptop {
+    font-size: 1em;
+  }
+
+  #myForm-uptop input {
+    font-size: 1em;
+    width: 45%;
+    height: 40px;
+  }
+
+  /*Hero Area*/
+  .hero-area {
+    min-height: 500px;
+  }
+
+  .save-the-date h1 {
+    font-size: 2.25em;
   }
 
   .action-button {
@@ -740,6 +777,12 @@ footer h1 {
     font-size: 1.25em;
   }
 
+  /*Intro Paragraph*/
+
+  .intro-para h3 {
+    font-size: 1.5em;
+  }
+
   /* DC Blurb*/
   .dc-blurb {
     padding-top: 8%;
@@ -755,12 +798,8 @@ footer h1 {
 
   /*Show Description*/
   .description .content-wrapper {
-    width: 80%;
+    width: 60%;
     align-items: center;
-  }
-
-  .show-description {
-    width: 90%;
   }
 
   .show-description h4 {
@@ -819,7 +858,7 @@ footer h1 {
   }
 
   .ticket-info-section .content-wrapper {
-    width: 80%;
+    width: 60%;
     padding-bottom: 5%;
   }
 
@@ -903,11 +942,12 @@ footer h1 {
 
   /*Hero Section*/
   .hero-area {
-    min-height: 1300px;
+    min-height: 1000px;
   }
 
   .hero-area h1 {
-    font-size: 3.5em;
+    /* font-size: 4.25em; */
+    font-size: 10em;
   }
 
   .action-button,
@@ -922,6 +962,12 @@ footer h1 {
 
   .hero-area .content-wrapper p {
     font-size: 2em;
+  }
+
+  /*Intro Paragraph*/
+  .intro-para h3 {
+    font-size: 2.5em;
+    width: 80%;
   }
 
   /*DC Blurb*/
@@ -948,6 +994,10 @@ footer h1 {
 
   .show-description h4 {
     font-size: 3em;
+  }
+
+  .show-description {
+    width: 70%;
   }
 
   /*Residency Announcement Tablet*/
@@ -986,6 +1036,10 @@ footer h1 {
     padding-top: 6%;
   }
 
+  .ticket-info-section .content-wrapper {
+    width: 60%;
+  }
+
   /*Signup Form*/
 
   #myForm input {
@@ -1013,6 +1067,7 @@ footer h1 {
 
   footer h1 {
     font-size: 4em;
+    margin-bottom: 0.67em;
   }
 
   .vanish-contact,

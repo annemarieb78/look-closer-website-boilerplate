@@ -63,3 +63,38 @@ function autoScroll() {
 }
 setup();
 setInterval(autoScroll, autoScroll_interval);
+
+/*signup form*/
+function SubForm() {
+  $.ajax({
+    url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+    type: "post",
+    data: $("#myForm").serializeArray(),
+    // success: function () {
+    //   alert("Form Data Submitted :)");
+    // },
+    // error: function () {
+    //   alert("There was an error :(");
+    // },
+  });
+}
+
+/*signup uptop form*/
+function SubForm() {
+  $.ajax({
+    url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+    type: "post",
+    data: $("#myForm-uptop").serializeArray(),
+    // success: function () {
+    //   alert("Form Data Submitted :)");
+    // },
+    // error: function () {
+    //   alert("There was an error :(");
+    // },
+  }); 
+}
+
+function clearForm() {
+  document.getElementByName("name").value = "";
+  document.getElementByName("email").value = "";
+}

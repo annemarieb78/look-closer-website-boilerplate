@@ -47,34 +47,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function SubForm() {
-        $.ajax({
-          url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
-          type: "post",
-          data: $("#myForm").serializeArray(),
-          // success: function () {
-          //   alert("Form Data Submitted :)");
-          // },
-          // error: function () {
-          //   alert("There was an error :(");
-          // },
-        });
-      }
+      // function SubForm() {
+      //   $.ajax({
+      //     url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+      //     type: "post",
+      //     data: $("#myForm").serializeArray(),
+      //     // success: function () {
+      //     //   alert("Form Data Submitted :)");
+      //     // },
+      //     // error: function () {
+      //     //   alert("There was an error :(");
+      //     // },
+      //   });
+      // }
     </script>
     <script>
-      function SubForm() {
-        $.ajax({
-          url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
-          type: "post",
-          data: $("#myForm-uptop").serializeArray(),
-          // success: function () {
-          //   alert("Form Data Submitted :)");
-          // },
-          // error: function () {
-          //   alert("There was an error :(");
-          // },
-        });
-      }
+      // function SubForm() {
+      //   $.ajax({
+      //     url: "https://api.apispreadsheets.com/data/viXsgKp9LABNAE2N/",
+      //     type: "post",
+      //     data: $("#myForm-uptop").serializeArray(),
+      //     // success: function () {
+      //     //   alert("Form Data Submitted :)");
+      //     // },
+      //     // error: function () {
+      //     //   alert("There was an error :(");
+      //     // },
+      //   });
+      // }
     </script>
   </head>
 
@@ -105,13 +105,9 @@
         <!--Uptop Signup-->
       </div>
     </header>
-    <h2 class="heading-uptop">
-      Be the first to know when tickets go on sale
-    </h2>
+    <h2 class="heading-uptop">Be the first to know when tickets go on sale</h2>
     <section id="signup-uptop" class="signup-container-uptop">
       <section class="one-uptop">
-       
-
         <form id="myForm-uptop">
           <input type="text" name="name" placeholder="enter your name" />
 
@@ -122,22 +118,28 @@
           <br />
         </form>
         <div class="signup-button-uptop">
-          <button class="btn-uptop" role="button" onclick="SubForm()">
+          <button
+            class="btn-uptop"
+            role="button"
+            onclick="SubForm(); clearForm()"
+          >
             Sign me up!
           </button>
         </div>
       </section>
     </section>
-
+    <!--End of Uptop Signup-->
     <main>
+      <!--Hero Area-->
       <div class="hero-area-container">
         <section class="hero-area">
           <div class="content-wrapper">
             <div class="save-the-date">
-              <h1>January 31st, 2024</h1>
-              <h1>Opening night at Carnegie Hall</h1>
+              <h1>Look Closer 131</h1>
+              <!-- <h1>January 31, 2024</h1>
+              <h1>Opening night at Carnegie Hall</h1> -->              
             </div>
-            <div class="action-date">
+            <!-- <div class="action-date">
               <div class="call-to-action">
                 <button class="action-VIP-button" role="button">
                   Buy my VIP tickets now
@@ -145,13 +147,29 @@
                 <button class="action-button" role="button">
                   Buy my tickets now
                 </button>
-              </div>
-              <p>Carnegie Hall Opening Night tickets go on sale November 2</p>
+              </div> -->
+              <p>
+                Weill Hall in Carnegie Hall opening night tickets go on sale
+                November 2
+              </p>
             </div>
           </div>
         </section>
       </div>
+      <!--End of Hero Area-->
 
+      <!--Intro Paragraph-->
+      <div class="intro-para">
+        <h3>
+          January 31st, 2024. Weill Hall in Carnegie Hall, New York City. Look
+          Closer, an entirely new magic show by Joshua Jay opens. Invented
+          specifially for closer inspection. Continues in Midnight Theatre NYC
+          for a one month run in February.
+        </h3>
+      </div>
+      <!--End of Intro Paragraph-->
+
+      <!--DC Blurb-->
       <aside class="blurb">
         <div class="content-wrapper">
           <div class="dc-blurb">
@@ -166,6 +184,7 @@
           </div> -->
         </div>
       </aside>
+      <!--End of DC Blurb-->
 
       <!--Carousel-->
       <div id="container">
@@ -217,12 +236,12 @@
 
       <!--End of Carousel-->
 
-      <div class="call-to-action">
+      <!-- <div class="call-to-action">
         <button class="action-VIP-button" role="button">
           Buy my VIP tickets now
         </button>
         <button class="action-button" role="button">Buy my tickets now</button>
-      </div>
+      </div> -->
 
       <section id="about" class="description">
         <div class="content-wrapper">
@@ -253,7 +272,7 @@
             <div class="residency-image">
               <a href="#"
                 ><img
-                  src="img/look-closer-2-cropped.jpg"
+                  src="/img/look-closer-2-cropped.jpg"
                   alt="Man looking through magnifying glass"
               /></a>
             </div>
@@ -262,7 +281,7 @@
                 <p>
                   Joshua Jay and his stunning new show will have a
                   <b>February residency</b> at the elegant Midnight Theatre in
-                  NYC. Tickets on sale soon here and at
+                  NYC. Tickets on sale soon at
                   <span class="midnight-link"
                     ><a href="https://midnighttheatre.com" target="_blank"
                       >midnighttheatre.com</a
@@ -299,18 +318,16 @@
           </div>
           <div class="VIP-ticket-info">
             <p>
-              We have a small number of VIP tickets available for $300 each. VIP
-              tickets include:
+              We have 35 VIP tickets available for $300 each. VIP tickets
+              include:
             </p>
             <ul>
-              <li>Front-row or second-row seating.</li>
+              <li>Seating in the first three rows.</li>
               <li>A unique post-show, close-up magic set by Joshua Jay.</li>
+              <li>Open bar and light snacks for one hour during post-show.</li>
               <li>
-                Cocktail hour at Carnegie Hall after the main show with open bar
-                and light snacks.
-              </li>
-              <li>
-                A signed copy of Joshua Jay's book,<em>How Magicians Think.</em>
+                A personalized signed copy of Joshua Jay's book,
+                <em>How Magicians Think.</em>
               </li>
               <!-- <li>Reception includes open bar and light snacks.</li> -->
             </ul>
@@ -318,12 +335,12 @@
         </div>
       </section>
 
-      <div class="call-to-action">
+      <!-- <div class="call-to-action">
         <button class="action-VIP-button" role="button">
           Buy my VIP tickets now
         </button>
         <button class="action-button" role="button">Buy my tickets now</button>
-      </div>
+      </div> -->
 
       <!--Ticket Information Section-->
 
