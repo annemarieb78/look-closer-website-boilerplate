@@ -166,7 +166,6 @@ nav ul li a {
 }
 
 /*Uptop Signup Form*/
-
 .signup-container-uptop {
   background-color: #0c2116;
   display: flex;
@@ -237,7 +236,7 @@ nav ul li a {
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url(../img/six-fingers-1600x1000.jpg) center, no-repeat;
+  background: url(../img/look-closer-2-hero-extended.jpg) center, no-repeat;
   background-size: cover;
   min-height: 200px;
   width: 100%;
@@ -439,9 +438,9 @@ nav ul li a {
   text-align: center;
 }
 
-.show-description h4 {
-  padding-top: 12%;
-}
+/* .show-description h4 {
+  padding-top: 8%;
+} */
 /*End of show description*/
 
 /*Residency announcement*/
