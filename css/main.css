@@ -437,14 +437,9 @@ nav ul li a {
   align-items: center;
   text-align: center;
 }
-
-/* .show-description h4 {
-  padding-top: 8%;
-} */
 /*End of show description*/
 
 /*Residency announcement*/
-
 .divider {
   display: flex;
   justify-content: center;
@@ -509,7 +504,6 @@ nav ul li a {
 }
 
 /*Signup Form*/
-
 .signup-container {
   background-color: #0c2116;
   display: flex;
@@ -613,7 +607,7 @@ footer h1 {
   padding-top: 15%;
 }
 
-.footer-links a {
+footer a {
   text-decoration: none;
   color: #000;
   font-family: "Open Sans";
