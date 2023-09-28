@@ -112,8 +112,7 @@ figure {
 }
 
 .content-wrapper,
-.signup-container {
-  /* outline: 3px dotted red; */
+.signup-container { 
   width: 100%;
   margin: 0;
   display: flex;
@@ -261,7 +260,7 @@ nav ul li a {
   align-items: flex-start;
   margin: 0;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.75em;
   line-height: 1em;
   font-weight: 500;
 }
@@ -308,14 +307,37 @@ nav ul li a {
 .intro-para {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 5%;
   width: 100%;
 }
+
 .intro-para h3 {
-  font-family: "Open Sans";
-  text-align: center;
-  width: 95%;
-  font-size: 1em;
+ font-family: "Open Sans"; 
+ font-size: .85em;
+}
+
+.intro-para .content-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.intro-para-text, .intro-para-heading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-para-text{
+  font-size: .75em;
+}
+
+h3 span {
+  width: 20%;
+  font-family: "optician sans";
+  font-size: 1.25em;
 }
 
 /*DC Quote*/
@@ -582,6 +604,11 @@ footer h1 {
   justify-content: center;
 }
 
+.groupava-contact .contact-us-icons{
+  display: flex;
+  justify-content: space-around;
+}
+
 .vanish-logo {
   padding: 10% 0;
 }
@@ -767,14 +794,29 @@ footer a {
   }
 
   .hero-area .content-wrapper p {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   /*Intro Paragraph*/
-
-  .intro-para h3 {
+  .intro-para h3 {   
     font-size: 1.5em;
-  }
+   }
+    
+   .intro-para-text, .intro-para-heading{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+   }
+   
+   .intro-para-text{
+     font-size: 1.15em;
+   }
+   
+   h3 span {
+     width: 20%;
+     font-family: "optician sans";
+     font-size: 1.5em;
+   }
 
   /* DC Blurb*/
   .dc-blurb {
@@ -958,9 +1000,24 @@ footer a {
 
   /*Intro Paragraph*/
   .intro-para h3 {
-    font-size: 2.5em;
-    width: 80%;
+    font-size: 2.5em;   
   }
+   
+   .intro-para .content-wrapper{
+     display: flex;    
+     flex-direction: column;
+     width: 80%;
+   }
+     
+   .intro-para-text{
+     font-size: 2em;
+   }
+   
+   h3 span {
+     width: 20%;
+     font-family: "optician sans";
+     font-size: 1.25em;
+   }
 
   /*DC Blurb*/
   .dc-blurb h4 {
@@ -989,7 +1046,7 @@ footer a {
   }
 
   .show-description {
-    width: 70%;
+    width: 80%;
   }
 
   /*Residency Announcement*/
