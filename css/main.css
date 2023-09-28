@@ -827,21 +827,20 @@ footer a {
   .residency-description {
     padding: 3% 0 0 5%;
     width: 55%;
-    font-size: 1.15em;
+    font-size: 1.05em;
   }
 
   .description-logo {
     display: flex;
-    justify-content: start;
-    padding-right: 2%;
+    justify-content: space-between;
   }
 
   .midnight-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
   }
 
   /*Ticket Info Section*/
@@ -993,25 +992,28 @@ footer a {
     width: 70%;
   }
 
-  /*Residency Announcement Tablet*/
+  /*Residency Announcement*/
+  .description-logo {
+    padding: 0;
+  }
+
   .residency-image {
     width: 100%;
   }
 
   .residency-image img {
-    padding: 0 0 5% 5%;
-    height: 400px;
-    width: 500px;
+    padding: 0 0 5% 5%;   
   }
 
   .residency-description {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-top: 0;
   }
 
   .midnight-logo img {
-    height: 100%;
-    width: 100%;
+    padding: 0;
+    height: 80%;
+    width: 80%;
   }
 
   /*Ticket Info Section*/
