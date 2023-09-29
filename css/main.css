@@ -1006,7 +1006,7 @@ footer a {
    .intro-para .content-wrapper{
      display: flex;    
      flex-direction: column;
-     width: 80%;
+     width: 60%;
    }
      
    .intro-para-text{
