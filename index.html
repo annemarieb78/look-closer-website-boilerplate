@@ -27,7 +27,6 @@
 
     <meta name="theme-color" content="#fafafa" />
 
-    
     <link rel="opticiansans-font" href="fonts/Optician-Sans.otf" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +45,6 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    
   </head>
 
   <body>
@@ -80,19 +78,30 @@
     <section id="signup-uptop" class="signup-container-uptop">
       <section class="one-uptop">
         <form id="myForm-uptop">
-          <input type="text" name="name" placeholder="enter your name" />
+          <input
+            id="input1"
+            type="text"
+            name="name"
+            placeholder="enter your name"
+          />
 
           <br />
 
-          <input type="text" name="email" placeholder="enter your email" />
+          <input
+            id="input2"
+            type="text"
+            name="email"
+            placeholder="enter your email"
+          />
 
           <br />
         </form>
         <div class="signup-button-uptop">
           <button
+            type="submit"
             class="btn-uptop"
             role="button"
-            onclick="SubForm(); clearForm()"
+            onclick="SubForm(); clearText()"
           >
             Sign me up!
           </button>
@@ -118,7 +127,7 @@
                 <button class="action-button" role="button">
                   Buy my tickets now
                 </button>
-              </div>              
+              </div>
             </div>
           </div>
         </section>
@@ -129,18 +138,21 @@
       <section class="intro-para">
         <div class="content-wrapper">
           <div class="intro-para-heading">
-        <h3>
-          <span>When: </span> January 31st, 2024.</h3>
-          <h3><span>Where: </span>Weill Hall, Carnegie Hall, New York City.</h3>
-          <h3><span>What: </span>Look Closer.</h3>
+            <h3><span>When: </span> January 31st, 2024.</h3>
+            <h3>
+              <span>Where: </span>Weill Hall, Carnegie Hall, New York City.
+            </h3>
+            <h3><span>What: </span>Look Closer.</h3>
+          </div>
+          <div class="intro-para-text">
+            <p>
+              An entirely new magic show by Joshua Jay. Continues in Midnight
+              Theatre NYC for a one month residency in February. Opening night
+              tickets go on sale November 9.
+            </p>
+          </div>
         </div>
-        <div class="intro-para-text">
-          <p>An entirely new magic show by Joshua Jay. Continues in Midnight Theatre NYC
-          for a one month residency in February. Opening night tickets go on sale
-          November 9.</p>
-          </div>
-          </div>
-        </section>
+      </section>
       <!--End of Intro Paragraph-->
 
       <!--DC Blurb-->
@@ -297,7 +309,10 @@
             </p>
             <ul>
               <li>Seating in the first three rows.</li>
-              <li>A unique post-show reception with a close-up magic set by Joshua Jay.</li>
+              <li>
+                A unique post-show reception with a close-up magic set by Joshua
+                Jay.
+              </li>
               <li>Open bar and light snacks.</li>
               <li>
                 A personalized, signed copy of Joshua Jay's book,
@@ -313,9 +328,8 @@
         <button class="action-VIP-button" role="button">
           Buy my VIP tickets now
         </button>
-        <button class="action-button" role="button">Buy my tickets now</button>       
+        <button class="action-button" role="button">Buy my tickets now</button>
       </div>
-     
 
       <!--Ticket Information Section-->
 
@@ -329,13 +343,23 @@
           <h2 class="trick">don't miss a trick.</h2>
 
           <form id="myForm">
-            <input type="text" name="name" placeholder="enter your name" />
+            <input
+              id="input3"
+              type="text"
+              name="name"
+              placeholder="enter your name"
+            />
             <br />
-            <input type="text" name="email" placeholder="enter your email" />
+            <input
+              id="input4"
+              type="text"
+              name="email"
+              placeholder="enter your email"
+            />
             <br />
           </form>
           <div class="signup-button">
-            <button class="btn" role="button" onclick="SubForm()">
+            <button type="submit" class="btn" role="button" onclick="SubForm(), clearText()">
               Sign me up!
             </button>
           </div>
@@ -357,7 +381,10 @@
             <div class="icons-container">
               <div class="contact-us-icons">
                 <!-- <p><i class="fab fa-instagram"></i></p> -->
-                <a href="mailto:katie@groupava.com,leslie@groupava.com,annemarie@groupava.com"><p><i class="fas fa-thin fa-envelope"></i></p></a>
+                <a
+                  href="mailto:katie@groupava.com,leslie@groupava.com,annemarie@groupava.com"
+                  ><p><i class="fas fa-thin fa-envelope"></i></p
+                ></a>
                 <p><i class="fas fa-light fa-location-dot"></i></p>
               </div>
             </div>
@@ -372,9 +399,19 @@
             </div>
             <div class="icons-container">
               <div class="contact-us-icons">
-                <a href="https://www.instagram.com/joshuajaymagician/" target="_blank"><p><i class="fab fa-instagram"></i></p></a>
-                <a href="mailto:magic@vanishingincmagic.com"><p><i class="fas fa-thin fa-envelope"></i></p></a>
-                <a href="https://www.google.com/maps/place/11355+Folsom+Blvd+%23+K,+Rancho+Cordova,+CA+95742,+USA/@38.6090023,-121.2828291,13.37z/data=!4m6!3m5!1s0x809ae78153090c03:0xcf8e2e349cba57a1!8m2!3d38.6127176!4d-121.2573902!16s%2Fg%2F11m_lfk0kj?authuser=0&entry=ttu" target="_blank"><p><i class="fas fa-thin fa-location-dot"></i></p></a>
+                <a
+                  href="https://www.instagram.com/joshuajaymagician/"
+                  target="_blank"
+                  ><p><i class="fab fa-instagram"></i></p
+                ></a>
+                <a href="mailto:magic@vanishingincmagic.com"
+                  ><p><i class="fas fa-thin fa-envelope"></i></p
+                ></a>
+                <a
+                  href="https://www.google.com/maps/place/11355+Folsom+Blvd+%23+K,+Rancho+Cordova,+CA+95742,+USA/@38.6090023,-121.2828291,13.37z/data=!4m6!3m5!1s0x809ae78153090c03:0xcf8e2e349cba57a1!8m2!3d38.6127176!4d-121.2573902!16s%2Fg%2F11m_lfk0kj?authuser=0&entry=ttu"
+                  target="_blank"
+                  ><p><i class="fas fa-thin fa-location-dot"></i></p
+                ></a>
               </div>
             </div>
           </div>
