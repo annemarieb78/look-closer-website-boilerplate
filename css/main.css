@@ -98,6 +98,7 @@ body {
 
 main {
   background-color: #0c2116;
+  font-family: "Open Sans";
 }
 
 h1,
@@ -112,7 +113,7 @@ figure {
 }
 
 .content-wrapper,
-.signup-container { 
+.signup-container {
   width: 100%;
   margin: 0;
   display: flex;
@@ -122,7 +123,8 @@ figure {
 
 header {
   display: flex;
-  background-color: #0c2116;
+  background-color: transparent;
+  width: 100%;
 }
 
 header .content-wrapper {
@@ -130,14 +132,21 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
+  /* width: 100%; */
+  font-family: "Open Sans";
 }
 
 header img {
-  max-width: 80%;
+  /* max-width: 100%; */
+  display: flex;
   justify-content: center;
   margin: 0;
-  padding: 20px 0 0 60px;
+  /* padding: 20px 0 0 60px;*/
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
 }
 
 header nav {
@@ -164,11 +173,45 @@ nav ul li a {
   font-weight: bold;
 }
 
-/*Uptop Signup Form*/
-.signup-container-uptop {
-  background-color: #0c2116;
+/*Hero Area*/
+.hero-area-container {
   display: flex;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  background: url(../img/look-closer-2-hero-extended2.jpg) center, no-repeat;
+  /* background: url(../img/six-fingers-1600x1000.jpg) center, no-repeat; */
+  background-size: cover;
+  max-height: 600px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+/*Uptop Signup Form*/
+.signup-uptop-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.signup-container-uptop {
+  background-color: transparent;
+  display: flex;  
+  justify-content: center;
   width: 100%;
 }
 
@@ -182,6 +225,8 @@ nav ul li a {
 
 .heading-uptop {
   display: flex;
+  justify-content: center;
+  width: 100%;
   font-size: 1em;
   text-align: center;
 }
@@ -226,29 +271,9 @@ nav ul li a {
 }
 /*End of Uptop Signup*/
 
-/*Hero Area*/
-.hero-area-container {
-  display: flex;
-  justify-content: center;
-}
 
-.hero-area {
-  display: flex;
-  justify-content: center;
-  background: url(../img/look-closer-2-hero-extended.jpg) center, no-repeat;
-  background-size: cover;
-  min-height: 200px;
-  width: 100%;
-  align-items: flex-end;
-}
 
-.hero-area .content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.save-the-date {
+/* .save-the-date {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -260,18 +285,15 @@ nav ul li a {
   align-items: flex-start;
   margin: 0;
   color: #fff;
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1em;
   font-weight: 500;
-}
-
-.hero-area .call-to-action {
-  padding-top: 3%;
-}
+} */
 
 .call-to-action {
   display: flex;
   justify-content: center;
+  padding-top: 5%;
 }
 
 .action-button {
@@ -314,24 +336,25 @@ nav ul li a {
 }
 
 .intro-para h3 {
- font-family: "Open Sans"; 
- font-size: .85em;
+  font-family: "Open Sans";
+  font-size: 0.85em;
 }
 
-.intro-para .content-wrapper{
+.intro-para .content-wrapper {
   display: flex;
   flex-direction: column;
   width: 90%;
 }
 
-.intro-para-text, .intro-para-heading{
+.intro-para-text,
+.intro-para-heading {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.intro-para-text{
-  font-size: .75em;
+.intro-para-text {
+  font-size: 0.75em;
 }
 
 h3 span {
@@ -440,6 +463,7 @@ h3 span {
 .description {
   display: flex;
   justify-content: center;
+  padding-top: 5%;
 }
 
 .show-description {
@@ -604,7 +628,7 @@ footer h1 {
   justify-content: center;
 }
 
-.groupava-contact .contact-us-icons{
+.groupava-contact .contact-us-icons {
   display: flex;
   justify-content: space-around;
 }
@@ -770,7 +794,7 @@ footer a {
 
   /*Hero Area*/
   .hero-area {
-    min-height: 500px;
+    min-height: 400px;
   }
 
   .save-the-date h1 {
@@ -798,25 +822,26 @@ footer a {
   }
 
   /*Intro Paragraph*/
-  .intro-para h3 {   
+  .intro-para h3 {
     font-size: 1.5em;
-   }
-    
-   .intro-para-text, .intro-para-heading{
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-   }
-   
-   .intro-para-text{
-     font-size: 1.15em;
-   }
-   
-   h3 span {
-     width: 20%;
-     font-family: "optician sans";
-     font-size: 1.5em;
-   }
+  }
+
+  .intro-para-text,
+  .intro-para-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .intro-para-text {
+    font-size: 1.15em;
+  }
+
+  h3 span {
+    width: 20%;
+    font-family: "optician sans";
+    font-size: 1.5em;
+  }
 
   /* DC Blurb*/
   .dc-blurb {
@@ -976,18 +1001,19 @@ footer a {
 
   /*Hero Section*/
   .hero-area {
-    min-height: 1000px;
+    min-height: 500px;
   }
 
   .hero-area h1 {
-    /* font-size: 4.25em; */
-    font-size: 10em;
+    font-size: 3.25em;
+    /* font-size: 10em; */
   }
 
   .action-button,
   .action-VIP-button {
     height: 50px;
     font-size: 1.75em;
+    margin-bottom: 80px;
   }
 
   /* .hero-area .call-to-action {
@@ -1000,24 +1026,24 @@ footer a {
 
   /*Intro Paragraph*/
   .intro-para h3 {
-    font-size: 2.5em;   
+    font-size: 2.5em;
   }
-   
-   .intro-para .content-wrapper{
-     display: flex;    
-     flex-direction: column;
-     width: 60%;
-   }
-     
-   .intro-para-text{
-     font-size: 2em;
-   }
-   
-   h3 span {
-     width: 20%;
-     font-family: "optician sans";
-     font-size: 1.25em;
-   }
+
+  .intro-para .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .intro-para-text {
+    font-size: 2em;
+  }
+
+  h3 span {
+    width: 20%;
+    font-family: "optician sans";
+    font-size: 1.25em;
+  }
 
   /*DC Blurb*/
   .dc-blurb h4 {
@@ -1059,7 +1085,7 @@ footer a {
   }
 
   .residency-image img {
-    padding: 0 0 5% 5%;   
+    padding: 0 0 5% 5%;
   }
 
   .residency-description {
