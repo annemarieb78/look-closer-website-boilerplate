@@ -122,9 +122,10 @@ figure {
 }
 
 header {
-  display: flex;
+  /* display: flex;
   background-color: transparent;
-  width: 100%;
+  width: 100%;  */
+  height: auto;
 }
 
 header .content-wrapper {
@@ -132,16 +133,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* width: 100%; */
   font-family: "Open Sans";
 }
 
 header img {
-  /* max-width: 100%; */
   display: flex;
   justify-content: center;
   margin: 0;
-  /* padding: 20px 0 0 60px;*/
 }
 
 header figure {
@@ -210,7 +208,7 @@ nav ul li a {
 
 .signup-container-uptop {
   background-color: transparent;
-  display: flex;  
+  display: flex;
   justify-content: center;
   width: 100%;
 }
@@ -270,8 +268,6 @@ nav ul li a {
   height: 30px;
 }
 /*End of Uptop Signup*/
-
-
 
 /* .save-the-date {
   display: flex;
@@ -632,10 +628,10 @@ footer h1 {
   display: flex;
   justify-content: space-around;
 }
-
+/* 
 .vanish-logo {
   padding: 10% 0;
-}
+} */
 
 .groupava-logo {
   padding: 15% 0 5% 0;
@@ -802,17 +798,17 @@ footer a {
   }
 
   .action-button {
-    width: 30%;
+    width: 25%;
     height: 30px;
-    font-size: 1.25em;
+    font-size: 0.85em;
     margin-bottom: 1%;
     align-items: center;
   }
 
   .action-VIP-button {
-    width: 30%;
+    width: 25%;
     height: 30px;
-    font-size: 1.25em;
+    font-size: 0.85em;
     margin-bottom: 1%;
     align-items: center;
   }
@@ -974,34 +970,48 @@ footer a {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
-  /*Header*/
+  /* Header*/
   header {
-    width: 80%;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    height: 100px;
   }
 
   header .content-wrapper {
-    justify-content: space-between;
-    flex-flow: nowrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    min-height: 150px;
   }
 
-  header img {
+  /* header img {
     padding: 0;
-  }
+  } */
 
   .look-closer-logo {
-    width: 50%;
-    height: 90%;
+    display: flex;
+    align-items: start;
+    width: 40%;
+    height: 80%;
   }
 
-  header nav {
-    width: 50%;
+  .content-wrapper nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
   }
+
+  header nav ul {
+    justify-content: space-around;
+    width: 100%;
+  }
+  
 
   /*Hero Section*/
   .hero-area {
-    min-height: 500px;
+    min-height: 900px;
   }
 
   .hero-area h1 {
@@ -1011,9 +1021,9 @@ footer a {
 
   .action-button,
   .action-VIP-button {
-    height: 50px;
-    font-size: 1.75em;
-    margin-bottom: 80px;
+    height: 40px;
+    font-size: 1.25em;
+    margin-bottom: 70px;
   }
 
   /* .hero-area .call-to-action {
@@ -1025,8 +1035,12 @@ footer a {
   }
 
   /*Intro Paragraph*/
+  .intro-para {
+    padding-top: 0;
+  }
+
   .intro-para h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .intro-para .content-wrapper {
@@ -1036,7 +1050,7 @@ footer a {
   }
 
   .intro-para-text {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   h3 span {
@@ -1047,11 +1061,11 @@ footer a {
 
   /*DC Blurb*/
   .dc-blurb h4 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   .dc-blurb h5 {
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 
   /*Carousel*/
@@ -1064,11 +1078,11 @@ footer a {
   /*Show Description*/
 
   .show-description p {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 
   .show-description h4 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .show-description {
@@ -1101,13 +1115,13 @@ footer a {
 
   /*Ticket Info Section*/
   .ticket-info-section h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .ticket-info-section p,
   .VIP-ticket-info p,
   .VIP-ticket-info ul {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .ticket-info-section {
@@ -1126,11 +1140,11 @@ footer a {
   }
 
   .heading {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .trick {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .btn {
