@@ -388,6 +388,20 @@ h3 span {
   color: #999;
 }
 
+/*YouTube Video*/
+.youtube .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5%;
+}
+
 /*Carousel*/
 * {
   margin: 0;
@@ -855,6 +869,12 @@ footer a {
     font-size: 2em;
   }
 
+  /*YouTube Video*/
+  iframe {
+    min-height: 500px;
+    width: 90%;
+  }
+
   /*Show Description*/
   .description .content-wrapper {
     width: 60%;
@@ -920,7 +940,6 @@ footer a {
   }
 
   /*Signup Form*/
-
   #myForm input {
     height: 40px;
     width: 50%;
@@ -1061,6 +1080,12 @@ footer a {
 
   .dc-blurb h5 {
     font-size: 2.25em;
+  }
+
+  /*YouTube*/
+  iframe {
+    min-height: 800px;
+    width: 60%;
   }
 
   /*Carousel*/
