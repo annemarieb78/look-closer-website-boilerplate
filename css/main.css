@@ -1024,6 +1024,11 @@ footer a {
     width: 100%;
   }
 
+  /*Uptop Signup*/
+  .one-uptop {
+    padding: 1% 0;
+  }
+
   /*Hero Section*/
   .hero-area {
     min-height: 900px;
@@ -1040,15 +1045,15 @@ footer a {
     font-size: 1.25em;
   }
 
-  /* .hero-area .call-to-action {
-      display: none;
-    } */
-
   .hero-area .content-wrapper p {
     font-size: 2em;
   }
 
   /*Intro Paragraph*/
+  .intro-para {
+    padding-top: 3%;
+  }
+
   .intro-para h3 {
     font-size: 2em;
   }
@@ -1084,7 +1089,7 @@ footer a {
 
   /*YouTube*/
   iframe {
-    min-height: 800px;
+    min-height: 700px;
     width: 60%;
   }
 
@@ -1107,7 +1112,7 @@ footer a {
   }
 
   .show-description p {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   .show-description h4 {
@@ -1115,7 +1120,7 @@ footer a {
   }
 
   .show-description {
-    width: 80%;
+    width: 70%;
   }
 
   /*Residency Announcement*/
@@ -1154,7 +1159,7 @@ footer a {
   }
 
   .ticket-info-section {
-    padding-top: 6%;
+    padding-top: 3%;
   }
 
   .ticket-info-section .content-wrapper {
@@ -1162,7 +1167,6 @@ footer a {
   }
 
   /*Signup Form*/
-
   #myForm input {
     height: 50px;
     width: 30%;
@@ -1173,7 +1177,7 @@ footer a {
   }
 
   .trick {
-    font-size: 3.5em;
+    font-size: 3em;
     margin: 0;
     padding-bottom: 3%;
   }
