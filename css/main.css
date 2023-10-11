@@ -121,13 +121,6 @@ figure {
   justify-content: center;
 }
 
-header {
-  /* display: flex;
-  background-color: transparent;
-  width: 100%; 
-  height: auto; */
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -399,7 +392,7 @@ iframe {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 5%;
+  padding: 5% 5% 0 5%;
 }
 
 /*Carousel*/
@@ -476,7 +469,7 @@ iframe {
 .description {
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .show-description {
@@ -875,14 +868,21 @@ footer a {
     width: 90%;
   }
 
+  #container {
+    margin-bottom: 3%;
+  }
+
   /*Show Description*/
+  .description {
+    padding-top: 5%;
+  }
+
   .description .content-wrapper {
     width: 60%;
     align-items: center;
   }
 
   .show-description h4 {
-    padding-top: 8%;
     font-size: 1.75em;
   }
 
@@ -1016,7 +1016,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 40%;
+    width: 50%;
   }
 
   header nav ul {
@@ -1027,6 +1027,8 @@ footer a {
   /*Uptop Signup*/
   .one-uptop {
     padding: 1% 0;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   /*Hero Section*/
@@ -1034,8 +1036,8 @@ footer a {
     min-height: 900px;
   }
 
-  .hero-area h1 {
-    font-size: 3.25em;
+  .save-the-date h1 {
+    font-size: 2.5em;
     padding-top: 2%;
   }
 
@@ -1043,10 +1045,6 @@ footer a {
   .action-VIP-button {
     height: 40px;
     font-size: 1.25em;
-  }
-
-  .hero-area .content-wrapper p {
-    font-size: 2em;
   }
 
   /*Intro Paragraph*/
@@ -1108,7 +1106,7 @@ footer a {
 
   /*Show Description*/
   .description {
-    padding-top: 1%;
+    padding-top: 3%;
   }
 
   .show-description p {
@@ -1124,6 +1122,9 @@ footer a {
   }
 
   /*Residency Announcement*/
+  .residency .content-wrapper {
+    padding-top: 3%;
+  }
   .description-logo {
     padding: 0;
   }
