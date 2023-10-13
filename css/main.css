@@ -293,10 +293,12 @@ nav ul li a {
 .action-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   width: 40%;
   height: 20px;
   background-color: #1ddfb8;
+  color: #000;
   font-size: 0.75em;
   margin: 0 5%;
 }
@@ -304,10 +306,12 @@ nav ul li a {
 .action-VIP-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   width: 40%;
   height: 20px;
   background-color: #078d72;
+  color: #000;
   font-size: 0.75em;
   margin: 0 5%;
 }
@@ -353,7 +357,7 @@ nav ul li a {
 
 h3 span {
   width: 20%;
-  font-family: "optician sans";
+  font-family: "kanit";
   font-size: 1.25em;
 }
 
@@ -378,7 +382,7 @@ h3 span {
 .dc-blurb h5 {
   display: flex;
   justify-content: center;
-  font-family: "Optician Sans";
+  font-family: "kanit";
   font-size: 1.25em;
   color: #999;
 }
@@ -491,6 +495,12 @@ iframe {
   align-items: center;
   text-align: center;
 }
+
+.show-description a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /*End of show description*/
 
 /*Residency announcement*/
@@ -848,7 +858,7 @@ footer a {
 
   h3 span {
     width: 20%;
-    font-family: "optician sans";
+    font-family: "kanit";
     font-size: 1.5em;
   }
 
@@ -1071,7 +1081,7 @@ footer a {
 
   h3 span {
     width: 20%;
-    font-family: "optician sans";
+    font-family: "kanit";
     font-size: 1.25em;
   }
 
