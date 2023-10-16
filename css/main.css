@@ -403,7 +403,7 @@ h3 span {
   align-items: center;
 }
 
-iframe {
+.video {
   display: flex;
   justify-content: center;
   margin-top: 5%;
@@ -898,8 +898,8 @@ footer a {
   }
 
   /*YouTube Video*/
- iframe {
-    min-height: 450px;
+  .video {
+    min-height: auto;
     width: 70%;
   }
 
@@ -1142,12 +1142,12 @@ footer a {
   }
 
   /*YouTube*/
-  iframe {
-    min-height: 450px;
-    width: 60%;
+  .video {
+    min-height: auto;
+    width: 40%;
   }
 
-    /*Carousel*/
+  /*Carousel*/
   #container {
     width: 60%;
     padding-top: 30%;
