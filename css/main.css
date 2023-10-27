@@ -325,6 +325,11 @@ nav ul li a {
   margin: 0 5%;
 }
 
+button a {
+  text-decoration: none;
+  color: #000;
+}
+
 .hero-area .content-wrapper p {
   font-size: 0.65em;
   display: flex;
@@ -346,7 +351,7 @@ nav ul li a {
 }
 
 .intro-para .content-wrapper {
-  width: 90%;
+  width: 97%;
 }
 
 .intro-para-text,
@@ -889,6 +894,10 @@ footer a {
     font-size: 1.25em;
   }
 
+  .intro-para .content-wrapper {
+    width: 80%;
+  }
+
   .intro-para-text,
   .intro-para-heading {
     display: flex;
@@ -1147,7 +1156,7 @@ footer a {
   .intro-para .content-wrapper {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
   }
 
   .intro-para-text {
@@ -1188,7 +1197,7 @@ footer a {
   }
 
   /*Carousel*/
-  #container {
+  /* #container {
     width: 60%;
     padding-top: 30%;
     margin-top: 5%;
@@ -1198,7 +1207,7 @@ footer a {
 
   .call-to-action {
     padding-top: 3%;
-  }
+  } */
 
   /*Show Description*/
   .description {
