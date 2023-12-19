@@ -390,6 +390,18 @@ button a {
   margin: 1%;
 }
 
+.ada-seats1{
+  text-align: center;
+  font-size: 1.5em;
+  color: #1ddfb8;
+}
+
+.ada-seats2 {
+  text-align: center;
+  padding-top: 5%;
+  color: #1ddfb8;
+}
+
 /*DC Quote*/
 .blurb .content-wrapper {
   display: flex;
