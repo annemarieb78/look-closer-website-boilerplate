@@ -202,10 +202,11 @@ nav ul li a {
 .signup-uptop-heading {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   width: 100%;
   height: 100%;
+  padding-top: 60px;
 }
 
 .signup-uptop-heading .content-wrapper {
@@ -390,7 +391,7 @@ button a {
   margin: 1%;
 }
 
-.ada-seats1{
+.ada-seats1 {
   text-align: center;
   font-size: 1.5em;
   color: #1ddfb8;
